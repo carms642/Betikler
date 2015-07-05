@@ -3,10 +3,6 @@
 clear
 
  echo -e "\x1b[1m "
- echo -e "\x1b[31m Author : Sami Babat < info@samibabat.com >"
-     echo -e " "
-     echo -e " "
-     echo -e "\x1b[33m » www.linuxDiyari.com « » www.samibabat.com «"
      echo -e " "
      echo -e " "
      echo -e "\x1b[36m Debian, Lamp & PhpMyadmin kurulumuna hoş geldiniz."
@@ -42,12 +38,7 @@ echo -e ""
 for i in {0..21} {0..16} ; do echo -en "\e[38;5;${i}m#\e[0m "; done;
 echo -e "\x1b[1m "
  echo -e ""
-
-echo -e "\x1b[31m Author : Sami Babat < info@samibabat.com >"
-     echo -e " "
-     echo -e " "
-     echo -e "\x1b[33m » www.linuxDiyari.com « » www.samibabat.com «\033[0m"
-     echo -e " "
+     echo -e "YAZILIM ODASI "
 elif [ $secim = "H" ]
 then
 clear
@@ -58,12 +49,6 @@ echo -e ""
 for i in {0..21} {0..16} ; do echo -en "\e[38;5;${i}m#\e[0m "; done;
 echo -e "\x1b[1m "
  echo -e ""
-
-echo -e "\x1b[31m Author : Sami Babat < info@samibabat.com >"
-     echo -e " "
-     echo -e " "
-     echo -e "\x1b[33m » www.linuxDiyari.com « » www.samibabat.com «\033[0m"
-     echo -e " "
    
 exit;
 else
@@ -71,5 +56,5 @@ else
 echo -e "\x1b[31m(E)vet veya (H)ayır diyiniz ! \033[0m";
 echo -e " "
 fi 
-
+service apache2 restart
 
